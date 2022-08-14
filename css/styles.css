@@ -35,3 +35,6 @@ footer {
 .navbar {
     background-color: #901CAD;
 }
+ol.breadcrumb {
+    margin-top: 1rem;
+}
