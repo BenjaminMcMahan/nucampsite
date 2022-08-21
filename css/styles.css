@@ -38,3 +38,9 @@ header h2 {
 ol.breadcrumb {
     margin-top: 1rem;
 }
+
+.tab-content {
+    border: 1px solid #DDDDDD;
+    border-top: none;
+    padding: 10px;
+}
