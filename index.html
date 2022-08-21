@@ -37,7 +37,13 @@
                 <h2>a better way to camp</h2>
             </div>
             <div class="col-md-4 col-xl-2 mt-4">
-                <a href="#reserveForm" class="btn btn-lg btn-info text-nowrap">
+                <a href="#reserveForm"
+                   class="btn btn-lg btn-info text-nowrap"
+                   data-toggle="tooltip"
+                   data-html="true"
+                   data-placement="bottom"
+                   title="Or call us at <br/> <strong>1-206-555-1234</strong>"
+                >
                     Reserve Campsite
                 </a>
             </div>
@@ -88,7 +94,8 @@
         </div>
         <div class="col">
             <div class="media">
-                <img src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail Thumb" class="d-flex mr-3 img-thumbnail">
+                <img src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail Thumb"
+                     class="d-flex mr-3 img-thumbnail">
                 <div class="media-body align-self-center">
                     <h3>Our Campsites</h3>
                     <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own
@@ -106,7 +113,8 @@
             <div class="media">
                 <div class="media-body align-self-center">
                     <h3>React Lake Campground</h3>
-                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores
+                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on
+                        the shores
                         of the pristine React
                         Lake is
                         a favorite for fly fishers.</p>
@@ -125,7 +133,8 @@
                 <img src="img/bootstrap-thumb.png" class="d-flex mr-3 img-thumbnail" alt="Bootstrap Outfitters">
                 <div class="media-body align-self-center">
                     <h3>Bootstrap Outfitters</h3>
-                    <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't
+                    <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you
+                        can't
                         beat.</p>
                 </div>
             </div>
@@ -187,8 +196,10 @@
             </div>
             <div class="col-6 col-sm-5 text-center">
                 <h5>Social</h5>
-                <a href="http://instagram.com/" class="btn btn-social-icon btn-instagram"><i class="fa fa-instagram"></i></a>
-                <a href="http://facebook.com/" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
+                <a href="http://instagram.com/" class="btn btn-social-icon btn-instagram"><i
+                        class="fa fa-instagram"></i></a>
+                <a href="http://facebook.com/" class="btn btn-social-icon btn-facebook"><i
+                        class="fa fa-facebook"></i></a>
                 <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
                 <a href="http://youtube.com/" class="btn btn-social-icon btn-google"><i class="fa fa-youtube"></i></a>
             </div>
@@ -207,5 +218,10 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 </body>
 </html>
