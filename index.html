@@ -254,6 +254,9 @@
                     <span class="carousel-control-next-icon"></span>
                 </a>
                 <!-- / Carousel Controls -->
+                <button class="btn btn-sm btn-danger" id="carouselButton">
+                    <i class="fa fa-pause"></i>
+                </button>
             </div>
         </div>
     </div>
@@ -348,5 +351,21 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    $(function() {
+        $(".carousel").carousel({
+            interval: 2000
+        });
+        $("#carouselButton").click(function() {
+            if ($(this).children("i").hasClass("fa-pause")) {
+                $(".carousel").carousel("pause");
+                $(this).children("i").removeClass("fa-pause").addClass("fa-play");
+            } else {
+                $(".carousel").carousel("cycle");
+                $(this).children("i").removeClass("fa-play").addClass("fa-pause");
+            }
+        });
+    });
+</script>
 </body>
 </html>
