@@ -1,4 +1,5 @@
 $(function() {
+    // Carousel Controls
     $(".carousel").carousel({
         interval: 2000
     });
@@ -10,5 +11,14 @@ $(function() {
             $(".carousel").carousel("cycle");
             $(this).children("i").removeClass("fa-play").addClass("fa-pause");
         }
+    });
+
+    // Reserve Button
+    $("#reserveButton").click(function () {
+        $("#reserveModal").modal('show');
+    });
+    // Login Button
+    $("#loginButton").click(function () {
+        $("#loginModal").modal('show');
     });
 });
